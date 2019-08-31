@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NY-20011</title>
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine|Unica+One&display=swap">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+
+
+    <script src="about.js" defer></script>
+
+
+
+
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <img src="logo.jpg" width="60" height="60">
+            <a class="navbar-brand" href="#">NY-20011</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                        <button class="buttonload">
+                                <a href ="file:///C:/Users/ASCStudent/Desktop/AFJROTC/home.html" class="nav-link" style="font-family: Unica One">Home <span class="sr-only">(current)</span> </a>
+                              </button>  
+                </li>
+                <li class="nav-item active">
+                        <button class="buttonload">
+                                <a href ="file:///C:/Users/ASCStudent/Desktop/AFJROTC/about.html" class="nav-link" style="font-family: Unica One">About Us <span class="sr-only">(current)</span> </a>
+                              </button>  
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Options
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">About Us</a>
+                    <a class="dropdown-item" href="#">Help</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Contact</a>
+                  </div>
+                </li>
+                <li class="nav-item active">
+                        <button class="buttonload">
+                                <a href ="file:///C:/Users/ASCStudent/Desktop/AFJROTC/news.html" class="nav-link" style="font-family: Unica One">Newsfeed <span class="sr-only">(current)</span> </a>
+                              </button>  
+                </li>
+                      <li class="nav-item active">
+                            <button class="buttonload">
+                                    <a href ="file:///C:/Users/ASCStudent/Desktop/AFJROTC/calen.html" class="nav-link" style="font-family: Unica One">Calendar <span class="sr-only">(current)</span> </a>
+                                  </button>  
+                    </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="color:blue; border-color:skyblue;">Search</button>
+              </form>
+            </div>
+          </nav>
+        <!-- TAB CONTROLLERS -->
+       
+<input id="panel-1-ctrl"
+class="panel-radios" type="radio" name="tab-radios" checked>
+<input id="panel-2-ctrl"
+class="panel-radios" type="radio" name="tab-radios">
+<input id="panel-3-ctrl"
+class="panel-radios" type="radio" name="tab-radios">
+<input id="panel-4-ctrl"
+class="panel-radios" type="radio" name="tab-radios">
+<input id="panel-5-ctrl"
+class="panel-radios" type="radio" name="tab-radios">
+<input id="nav-ctrl"
+class="panel-radios" type="checkbox" name="nav-checkbox">
+<div class="Banner">
+    	<div class="container">
+<header class="Banner-title" id="introduction" >
+<h1>About Us</h1>
+</header>
+</div>
+</div>
+<!-- TABS LIST -->
+<ul id="tabs-list">
+<!-- MENU TOGGLE -->
+<label id="open-nav-label" for="nav-ctrl"></label>
+<li id="li-for-panel-1">
+<label class="panel-label"
+      for="panel-1-ctrl">NY-20011</label>
+</li><!--INLINE-BLOCK FIX
+--><li id="li-for-panel-2">
+<label class="panel-label"
+      for="panel-2-ctrl">Curriculum</label>
+</li><!--INLINE-BLOCK FIX
+--><li id="li-for-panel-3">
+<label class="panel-label"
+      for="panel-3-ctrl">Benefits</label>
+</li><!--INLINE-BLOCK FIX
+--><li id="li-for-panel-4">
+<label class="panel-label"
+      for="panel-4-ctrl">Drill Team</label>
+</li><!--INLINE-BLOCK FIX
+--><li id="li-for-panel-5" class="last">
+<label class="panel-label"
+      for="panel-5-ctrl">Jobs</label>
+</li>
+<label id="close-nav-label" for="nav-ctrl">Close</label>
+</ul>
+
+<!-- THE PANELS -->
+<article id="panels">
+<div class="container">
+<section id="panel-1">
+<main>
+ <h1>Mission</h1>
+ <p>Develop citizens of character dedicated to serving their nation and community.</p> 
+ <h1>Goals</h1>
+ <p>Instill values of citizenship, service to the United States, personal responsibility and sense of accomplishment.</p>
+ <h1>Organization</h1>
+ <p>Air Force JROTC provides citizenship training and an aerospace science program for high school students. Secondary school students who enroll in the AFJROTC program are offered a wide variety of curricular and co-curricular activities. The program explores the historic and scientific aspects of aerospace technology and teaches high school students self-reliance, self-discipline and other leadership characteristics. Science, technology, engineering and mathematics (STEM) concepts are also an important part of this world-class program. The AFJROTC program is open to 9th-12th grade students. This program is not chartered as a recruiting program for the military services and those students who participate in AFJROTC <bold>DO NOT</bold> ​incur any obligation to the Air Force. 
+<p>Air Force JROTC objectives are to educate and train high school cadets in citizenship and life skills; promote community service; instill a sense responsibility; develop character, leadership, and self-discipline through education; and instruction in air and space fundamentals and the Air Force’s core values of integrity first, service before self and excellence in all we do.</p>
+</p>
+</main>
+</section>
+<section id="panel-2">
+<main>
+
+ <h1>Curriculum</h1>
+ <p>Aerospace science comprises 40 percent of the curriculum; leadership education, 40 percent; and health and wellness for life training, 20 percent. Classroom study includes the heritage of flight, principles of aircraft flight and navigation, human requirements of flight, development of aerospace power, aerospace vehicles, rocketry, space and technology programs, and the aerospace industry. Students are also introduced to military customs and courtesies, citizenship in the United States, first aid, wellness, health and fitness, basic drill and ceremonies, effective communications, management, human relations and life after high school. All uniforms and curriculum materials are provided by the Air Force.</p>
+<p>To reinforce what is learned in the classroom, cadets participate in outside the classroom co-curricular activities such as field trips to military bases, aerospace facilities and industries, museums, civilian airports and other areas related to aerospace education. Cadets also participate in parades, leadership activities, drill team competitions, color  guards, military balls and honorary academic groups. </p>
+
+<h1>Instructors</h1>
+<p>All AFJROTC instructors are retired Air Force commissioned and non-commissioned officers. The instructors maintain Air Force standards and are trained through the AFJROTC Junior Instructor Certification Course. They are full-time faculty members of the participating high school and are employed by the local school board to teach AFJROTC classes. There are more than 1,900 instructors serving in over 880 units around the world.</p>
+
+</main>
+</section>
+<section id="panel-3">
+<main>
+ <h1>Benefits</h1>
+ <p>AFJROTC cadets who choose to continue their education may receive special consideration for Air Force Reserve Officer Training Corps. Also, Cadets electing to enter the military immediately after graduating from high school are eligible to enlist in the services at one to two pay grades higher than other enlistees. Students completing three years in AFJROTC are eligible to enter the Air Force two pay grades higher than other enlistees, and are automatically enrolled into the Community College of the Air Force, to receive college credit toward their associate college degree.</p>
+<h1>Community Service</h1>
+<p>Community service is a major part of the cadet experience and helps instill a sense of civic pride and citizenship. Each year the cadets of AFJROTC do over 1.6 million hours of community service. Projects range from working with local Soup kitchens, nursing homes and early childhood daycare centers.
+    </p>
+</main>
+</section>
+<section id="panel-4">
+<main>
+ <h1>Drill Team</h1>
+
+</main>
+</section>
+<section id="panel-5">
+<main>
+ <h1>Job Select Sheet</h1>
+    
+</main>
+</section>
+</div>
+</article>
+                      
+          
+    
+</body>
+</html>
