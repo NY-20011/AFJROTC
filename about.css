@@ -381,7 +381,7 @@ label.panel-label:hover {
     width: 100%;
     left: 0;
     bottom: 100%;
-    background-color:skyblue;
+    background-color: rgb(58, 57, 57);
     height: 0;
     transition-property: height;
     transition-duration: 200ms;
@@ -442,8 +442,8 @@ label.panel-label:hover {
 }
 
 body {
-  background: blue;
-  color: #444444;
+  background: rgb(39, 39, 39);
+  color: white;
   font-family: 'Manjari', sans-serif;
 }
 

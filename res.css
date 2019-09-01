@@ -9,12 +9,12 @@ html, body {
     -moz-font-smoothing: antialiased;
 
     background:blue;
-    background: -moz-radial-gradient(center, ellipse cover,  blue 0%,blue 26%, darkblue 59%, darkblue 77%, skyblue 100%);
-    background: -webkit-gradient(radial, center center, 0, center center, 100%, color-stop(0%,blue), color-stop(26%,blue), color-stop(59%,darkblue), color-stop(77%,darkblue), color-stop(100%,skyblue ));
-    background: -webkit-radial-gradient(center, ellipse cover,  blue 0%,blue 26%,darkblue 59%,darkblue 77%,skyblue  100%);
-    background: -o-radial-gradient(center, ellipse cover,  blue 0%,blue 26%,darkblue 59%,darkblue 77%,skyblue  100%);
-    background: -ms-radial-gradient(center, ellipse cover,  blue 0%,blue 26%,darkblue 59%,darkblue 77%,skyblue  100%);
-    background: radial-gradient(ellipse at center,  blue 0%,blue 26%,darkblue 59%,darkblue 77%,skyblue  100%);
+    background: -moz-radial-gradient(center, ellipse cover,   rgb(58, 57, 57) 0%, rgb(58, 57, 57) 26%,  rgb(27, 27, 27) 59%, rgb(27, 27, 27)77%, darkgray 100%);
+    background: -webkit-gradient(radial, center center, 0, center center, 100%, color-stop(0%, rgb(58, 57, 57)), color-stop(26%, rgb(58, 57, 57)), color-stop(59%,darkblue), color-stop(77%,rgb(27, 27, 27)), color-stop(100%,darkgray ));
+    background: -webkit-radial-gradient(center, ellipse cover,   rgb(58, 57, 57) 0%, rgb(58, 57, 57)26%,rgb(27, 27, 27) 59%,rgb(27, 27, 27) 77%,darkgray  100%);
+    background: -o-radial-gradient(center, ellipse cover,   rgb(58, 57, 57) 0%, rgb(58, 57, 57) 26%,rgb(27, 27, 27) 59%,rgb(27, 27, 27) 77%,darkgray  100%);
+    background: -ms-radial-gradient(center, ellipse cover,   rgb(58, 57, 57) 0%, rgb(58, 57, 57) 26%,rgb(27, 27, 27)59%,rgb(27, 27, 27) 77%,darkgray  100%);
+    background: radial-gradient(ellipse at center,   rgb(58, 57, 57) 0%, rgb(58, 57, 57) 26%,rgb(27, 27, 27) 59%,rgb(27, 27, 27) 77%,darkgray 100%);
     font-family: 'Days One', sans-serif;
     padding: 0;
     margin: 0;
@@ -183,11 +183,11 @@ a {
 
 .sashimi dt, .sashimi dd, .sashimi a { background: grey; }
 .nigiri dt, .nigiri dd, .nigiri a { background: green; }
-.maki dt, .maki dd, .maki a { background: black; }
+.maki dt, .maki dd, .maki a { background: rgb(170, 169, 169); }
 
 .sashimi a:hover { background: grey; }
 .nigiri a:hover { background: green; }
-.maki a:hover { background:black; }
+.maki a:hover { background:rgb(170, 169, 169); }
 
 
 .maki {
