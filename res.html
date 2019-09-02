@@ -27,8 +27,8 @@
 
 </head>
 <body>
-    <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <!--navbar-->
+       <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <img src="logo.jpg" width="60" height="60">
             <a class="navbar-brand" href="file:///C:/Users/ASCStudent/Desktop/AFJROTC/home.html" style="font-family: Manjari">Truman AFJROTC</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,15 +47,7 @@
                                 <a href ="file:///C:/Users/ASCStudent/Desktop/AFJROTC/about.html" class="nav-link" style="font-family: Unica One">About Us <span class="sr-only">(current)</span> </a>
                               </button>  
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" style="font-family: Unica One" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Options
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="res.html">Resources</a>
-                    <a class="dropdown-item" href="contact.html">Contact</a>
-                  </div>
-                </li>
+               
                 <li class="nav-item active">
                         <button class="buttonload">
                                 <a href ="file:///C:/Users/ASCStudent/Desktop/AFJROTC/news.html" class="nav-link" style="font-family: Unica One">Newsfeed <span class="sr-only">(current)</span> </a>
@@ -66,53 +58,109 @@
                                     <a href ="file:///C:/Users/ASCStudent/Desktop/AFJROTC/calen.html" class="nav-link" style="font-family: Unica One">Calendar <span class="sr-only">(current)</span> </a>
                                   </button>  
                     </li>
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" style="font-family: Unica One" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              More
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="res.html"  style="font-family: Unica One">Resources</a>
+                              <a class="dropdown-item" href="contact.html"  style="font-family: Unica One">Contact</a>
+                            </div>
+                          </li>
               </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="color:blue; border-color:skyblue;">Search</button>
-              </form>
             </div>
           </nav>
-          <header class="header">
-                <hgroup>
-             
-                </hgroup>
-            </header>
-            
-            <section class="demo">
+          <div class="container">
+                <h1 class="display-4 text-center mb-4">Resources</h1>
                 
-                    <dl class="list maki">
-                            <dt>Resources</dt>
-                            <dd><a >Cadet Handbook Guide</a></dd>
-                            <dd><a >Promotional Application</a></dd>
-                            <dd><a >Study Material</a></dd>
-          
-                    </dl>
-        
-            
-                <dl class="list maki">
-                        <dt>Cadet Handbook Guide</dt>
-                        <dd><a >Cadet Creed P3</a></dd>
-                        <dd><a >Honor Code & Core Values P7-8</a></dd>
-                        <dd><a >Grading Policy P10</a></dd>
-                        <dd><a >Classroom Pocedures P12</a></dd>
-                        <dd><a >Uniform Guidlines & Diagrams P29-44</a></dd>
-                        <dd><a >Military Time & Phonetic AlphabetP49</a></dd>
-                        <dd><a >U.S. Air Force Ranks P50</a></dd>
-                        <dd><a >Leadership Syllabus P51-83</a></dd>
-                        <dd><a >Aerospace Syllabus P84-107</a></dd>
-                        <dd><a >Ribbon Cart P109 or Last Page</a></dd>
-                    
-    
-                </dl>
+                <div class="row mb-4">
+                  <div class="col text-center">
+                    <h3>Cadet Handbook Guide</h3>
+                    <a href="#" class="btn btn-lg btn-success" data-toggle="modal" data-target="#basicModal">More</a>
+                  </div>
+                </div>
                 
-            
-               
-            
-                <a href="#" class="toggle">Toggle</a>
-            
-            </section>
-            
-            
+                <div class="row mb-4">
+                  <div class="col text-center">
+                    <h3>​Cadet Promotional Application</h3>
+                    <a href="#" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#largeModal">More</a>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col text-center">
+                    <h3>Rook Knowledge Study Material</h3>
+                    <a href="#" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#smallModal">More</a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- basic modal -->
+              <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">Cadet Handbook Guide</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <h3>Cadet Creed: p.3</h3>
+                      <h3>Honor Code: p.7</h3>
+                      <h3>Core Values: p.8</h3>
+                      <h3>Cadet Grading Policy p.10</h3>
+                      <h3>Classroom Procedure(Flight Commander/Sergeant): p.12</h3>
+                      <h3>Uniform Guidelines: p.29-32</h3>
+                      <h3>Uniform Diagrams: p.39-44</h3>
+                      <h3>Military Time: p.49</h3>
+                      <h3>Phonetic Alphabet: p.49</h3>
+                      <h3>U.S. Air Force Ranks: p.50</h3>
+                      <h3>Leadership Syllabus: p.51-83</h3>
+                      <h3>Aerospace Syllabus: p.84-107</h3>
+                      <h3>Ribbon Cart: p.109 or Last Page</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- large modal -->
+              <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">Large Modal</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <h3>Modal Body</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- small modal -->
+              <div class="modal fade" id="smallModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">Small Modal</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <h3>Modal Body</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            <!-- Ettrics -->
+            <a href="file:///C:/Users/ASCStudent/Desktop/AFJROTC/home.html" class="logo" target="_blank">
+             <img class="logo" src="logo.jpg" alt="" /> 
+            </a>
 </body>
 </html>
