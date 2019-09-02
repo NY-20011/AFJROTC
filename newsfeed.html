@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="newsfeed.js" defer></script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>NY-20011</title>
+
+  <!-- fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine|Unica+One&display=swap">
+  <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="icon" type="image/png" href="…">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="newsfeed.css">
+
+
+
+
+
+</head>
+
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <img src="logo.jpg" width="60" height="60">
+    <a class="navbar-brand" href="file:///C:/Users/ASCStudent/Desktop/AFJROTC/home.html"
+      style="font-family: Manjari">Truman AFJROTC</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <button class="buttonload">
+            <a href="file:///C:/Users/ASCStudent/Desktop/AFJROTC/home.html" class="nav-link"
+              style="font-family: Unica One">Home <span class="sr-only">(current)</span> </a>
+          </button>
+        </li>
+        <li class="nav-item active">
+          <button class="buttonload">
+            <a href="file:///C:/Users/ASCStudent/Desktop/AFJROTC/about.html" class="nav-link"
+              style="font-family: Unica One">About Us <span class="sr-only">(current)</span> </a>
+          </button>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Options
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">About Us</a>
+            <a class="dropdown-item" href="#">Help</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Contact</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <button class="buttonload">
+            <a href="file:///C:/Users/ASCStudent/Desktop/AFJROTC/news.html" class="nav-link"
+              style="font-family: Unica One">Newsfeed <span class="sr-only">(current)</span> </a>
+          </button>
+        </li>
+        <li class="nav-item active">
+          <button class="buttonload">
+            <a href="file:///C:/Users/ASCStudent/Desktop/AFJROTC/calen.html" class="nav-link"
+              style="font-family: Unica One">Calendar <span class="sr-only">(current)</span> </a>
+          </button>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+          style="color:blue; border-color:skyblue;">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!--======Pixel Grid======-->
+  <div><img src="https://www.seanet.com/~owenmp/hvd-web/play-aids/grid-lg.gif" class="pixel-grid" /></div>
+  <div><i id="toggle-grid" class="fa fa-th"></i></div>
+  <!------------------------->
+  <!--========Cards========-->
+  <div class="container-fluid main-cont">
+    <div class="row news-row">
+      <div class="container-fluid col-md-12 col-sm-6 justify-content-center news-block">
+        <div class="card-group">
+          <div class="underlay">
+            <div class="card">
+              <div class="card-img-top" style="background-image: url('https://i.imgur.com/wLMJQPH.png')"></div>
+              <div class="card-block">
+                <h5 class="card-title" style="font-family: 'Anton', sans-serif">Canon Unveils New Lens
+                  <hr>
+                </h5>
+                <p class="card-text">Canon will have a full slate of new and updated products to show attendees at this
+                  year’s NAB Show. The company has announced its new Compact-Servo 70-200mm telephoto zoom lens <a
+                    href="#"><u>Read More...</u></a></p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="underlay">
+            <div class="card">
+              <div class="card-img-top" style="background-image: url('https://i.imgur.com/tT6Bxay.png')"></div>
+              <div class="card-block">
+                <h5 class="card-title" style="font-family: 'Anton', sans-serif">Sennheiser HD 598 Tech Specs
+                  <hr>
+                </h5>
+                <p class="card-text">The brown Sennheiser HD 598 audiophile headphones have excellent, detailed hi-fi
+                  sound and a stylish design. They are comfortable to wear and offer versatility as well. These
+                  accessories feature a multi-dimensional soundstage <a href="#"><u>Read More...</u></a></p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+          <div class="underlay">
+            <div class="card">
+              <div class="card-img-top" style="background-image: url('https://i.imgur.com/n6b2rib.png')"></div>
+              <div class="card-block">
+                <h5 class="card-title" style="font-family: 'Anton', sans-serif">North Sea Wind Power Hub
+                  <hr>
+                </h5>
+                <p class="card-text">The harnessing of energy has never been without projects of monolithic scale. From
+                  the Hoover Dam to the Three Gorges—the world's largest power station—engineers the world over have
+                  recognised that with size comes advantages <a href="#"><u>Read More...</u></a></p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------------------------>
+  <!--=======Scripts======-->
+  <script src="newsfeed.js"></script>
+  <script name="toggle-grid" type="text/javascript">
+    $(document).ready(function () {
+      $(document).on("keypress", function (event) {
+        // If 'alt + g' keys are pressed:
+        if (event.which === 169) {
+          $('#toggle-grid').toggle();
+        }
+      });
+
+      $('#toggle-grid').on("click", function () {
+        $('.pixel-grid').toggle();
+        $('#toggle-grid').toggleClass('orange');
+      });
+    });
+  </script>
+</body>
+
+</html>
+
+
+
+
+</body>
+
+</html>
