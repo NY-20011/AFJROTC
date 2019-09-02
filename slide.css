@@ -60,7 +60,7 @@
   .slideshow {
     position: relative;
     color: #ffffff;
-    background-color: #1e1e22;
+    background-color:  rgb(58, 57, 57);
     overflow: hidden;
     height: 100vh;
     min-height: 400px;
@@ -553,12 +553,12 @@
     }
   }
   ::-moz-selection {
-    background: #0084c0;
+    background:  rgb(58, 57, 57);
     color: #ffffff;
   }
   
   ::selection {
-    background: #0084c0;
+    background:  rgb(58, 57, 57);
     color: #ffffff;
   }
   
@@ -1802,4 +1802,14 @@
       width: 15.625rem;
     }
   }
-  
+  .logo {
+    position: fixed;
+    bottom: 3vh;
+    right: 3vw;
+    z-index: 2;
+  }
+  .logo img {
+    width: 45px;
+
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  }

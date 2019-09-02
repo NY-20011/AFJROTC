@@ -1,0 +1,15 @@
+.buttonload{
+    background-color: transparent;
+    border: transparent;
+}
+.logo {
+    position: fixed;
+    bottom: 3vh;
+    right: 3vw;
+    z-index: 2;
+  }
+  .logo img {
+    width: 45px;
+
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  }
