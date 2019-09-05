@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NY-20011</title>
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine|Unica+One&display=swap">
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="gal.css">
+    <link rel="icon" 
+      type="image/png" 
+      href="flag.ico">
+
+    <script src="gal.js" defer></script>
+
+
+
+
+
+</head>
+<body>
+     <!--navbar-->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="logo.jpg" width="60" height="60">
+        <a class="navbar-brand" href="index.html" style="font-family: Manjari">Truman AFJROTC</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                    <button class="buttonload">
+                            <a href ="index.html" class="nav-link" style="font-family: Unica One">Home <span class="sr-only">(current)</span> </a>
+                          </button>  
+            </li>
+            <li class="nav-item active">
+                    <button class="buttonload">
+                            <a href ="about.html" class="nav-link" style="font-family: Unica One">About Us <span class="sr-only">(current)</span> </a>
+                          </button>  
+            </li>
+           
+            <li class="nav-item active">
+                    <button class="buttonload">
+                            <a href ="newsfeed.html" class="nav-link" style="font-family: Unica One">Newsfeed <span class="sr-only">(current)</span> </a>
+                          </button>  
+            </li>
+                  <li class="nav-item active">
+                        <button class="buttonload">
+                                <a href ="calen.html" class="nav-link" style="font-family: Unica One">Calendar <span class="sr-only">(current)</span> </a>
+                              </button>  
+                </li>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="font-family: Unica One" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          More
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="res.html"  style="font-family: Unica One">Resources</a>
+                          <a class="dropdown-item" href="contact.html"  style="font-family: Unica One">Contact</a>
+                          <a class="dropdown-item" href="gal.html"  style="font-family: Unica One">Gallery</a>
+                        </div>
+                      </li>
+          </ul>
+        </div>
+      </nav>
+
+                <!-- Copyright -->
+                <!-- <div class="footer-copyright text-center py-3">© 2019 Copyright:
+                  <a href ="file:///C:/Users/ASCStudent/Documents/trumanap/home.html"> Truman.com</a>
+                  <p><a href="nicholasr2003@gmail.com">nicholasr2003@gmail.com</a> and <a href="daveurlajide004@gmail.com"> daveurlajide004@gmail.com </a></p>
+                </div> -->
+                <!-- Copyright -->
+
+                <main>
+                        <ul id="cd-gallery-items" class="cd-container">
+                            <li>
+                                <img src="https://lh3.googleusercontent.com/ZpGqxTm5qySSljRLuc4u9R2K2khsxaHtgfe-xIJoF1MKB22277WvdCiGR__vY69H06Ek_-PR42-F3kGheYVrBsSMHluzGz4M8-UTOaCwBVrWlNUVCLa4A_hdWWxeYdteBn5oKm-a8-MONPNC4TqK0J1M5yxzSCVLBb2s-zB9VXl9ZlnxJwV7AM_mKw7QCEi8lwN4m7codhwULqpCfszcg8XFCnfYdMv018b3nIrVvK70UnXB1JVaZRSCXpi5zXTcpKppCyQhqWvOPWeriwrZuoDR-Gwz76prtcRqPBpSc6KnY0mYNXCtaOydQOr-eEhcy_nLauSeP0RcvAavozcrGTc_-S6_noNFElc3h3iC_77A_u93nxWyrjKKIuxBEEKzomGhVgpTm7zVG9UBqWr_wN4_8r5nfuCU6HiBvaLf5DIv6g6ytMUoeh3UtWA4jriWzMYUGlRS_IBxflljuzGQQep0wFn7kFLf6txUpj-hnuB5h0mR3_rqCYvohuoZoOeNHPuDUwv_eIGXfVHkLGfgq4284Zh3-26GbkfvumxNlP3LVaqBstjQQ4nL0Lswjc2G4sV7G3yvRCoNzFbApikcDE2J84OpgKdJKmBx1kPzog639V8LwNlCwmv47jxAhfkRWfZJhykYaR8ZObxnT5LCM-qZMV4VS4Kz8cEZhAuitHUTw-HC_2MgSGo=w1373-h915-no" alt="Preview image">
+                            </li>
+                
+                            <li>
+                                <img src="https://lh3.googleusercontent.com/KNXdY9ZqYn3_km0ieG672iATn5L1GkUhn0wG1GR3_eD2S66JhiPJ2kzGvyY5NgTuOm1b3dd3lEt4YsKPFFGnxyaX6ops0rBUYWVqcy1P3Dwz4cznYqdvN0cxRyrUBh3lp5ksITRiHmIcJ-m3QHMCXnAj-igoEtPr64g8n4q1qpZbg3z-M5Y_yTw0OWefzfjiZ6ySw4pio7upz1BBWtCZb_jRe5kYmoFba1cDfmdnlKQJ-otVAchIUY4kplIcTzac11TWRB38z5riTE8RoGHI4c9XQgcfnjqixrGyPgzyEW5sQLVVyPB0TOVSyBtOnPeaLaJ6owUmvMcqQTxl7BsygXciZgg99h2Xx6HmYL-XlzVpTCE9CSv2gVT2osZSyC_Gh2WvhKe0AyNb3is5WM-8wquUTpSOGC2XqdHqmJxTCcSD1j4mp7vQMAYdxCL18-VsRZwWWtrMQzHxxupyy2qW9Z2FNRe_aCvWZIpblm9JJC6gV5xE_U047DSAOLNTLa-hUsj7tc-lrm54E9-hj36zc6eHiSnpNhKMWGJTRXQnk4ewqnsUSEJURZooXM0YLP2Sc3Ugo0-NbrayDWbG-TavPstxuLEc1TqCVUv9v_Gy9h2KBfvGZbq8Z1YdmfUU3eLNsgx4aw385V5y86cUCO3AfHpUYjKb0ASN-FPEBb1RYYRh8dBa_HApaz8=w1373-h915-no" alt="Preview image">
+                            </li>
+                
+                            <li>
+                                <img src="https://lh3.googleusercontent.com/xFBaRycwyXpce_RBwQXFM5PQRIHDtsGO4VvJvqdaF0KDVMCbsKKDuIi5kYTyUsWr6LwD-80zrDJXEtTUId5TB1-a8heABq-NZOYXPuH6CmsyiT7fE5pBV6oPLm_MmIAVh2rFsjLEfcBtukXNfwHrhWrt6bEsXNbGtdRQKREng9rqKDMpp8s0l3Akdjf1_sdrupgkX17EFFH-KUfsTNWMKwqQ-Z_5j0KfQrmzyVD4IsVLJgxpMFCn7aOklxBhBJtnlc6z5vyF1xoG62jfuNVVVm0JXV0VrNpaAdZonaDb5sqbkN8M7f5WQNR_55kufZLRQ6oblMsPgkyMini1urLiaQvk0hc0beNeVCg4mgvi7ivFJOoFPA46sDAS3TwgkOTP-uTqaR4TU0zqQgSoPfn7ehjMFCO5sCK1U8_r5LodrOo7eqvBs4-3vKajDLwT0zInXQKn4rQW_TR0kqsTanVHlmzMGaAcEdfWI571UMZ1RYrC62qa39VS9rAMlfPZbEc1oLleO6vJbrEtDDM587Tt4qaTdcY-0wCwhkNOg4hZN7ysvoyC-ONqIFsCASOz_lzRK9DSlMuVODYCunmdNrgBA-nV6bWHg5W2hhvLMLrIFlleE4X7eQVl3DC7Mld5oDLE4zVoJVxaT1xIVLf2Hv_AwqOBtilpduDNh7QD72F5vSC2n6eT1mnulzc=w611-h915-no" alt="Preview image">
+                            </li>
+                
+                            <li>
+                                <img src="clc.jpg" alt="Preview image">
+                            </li>
+                
+                            <li>
+                                <img src="123_1.jpg" alt="Preview image">
+                            </li>
+                
+                            <li>
+                                <img src="123_1_02.jpg" alt="Preview image">
+                            </li>
+                
+                            <li>
+                                <img src="https://lh3.googleusercontent.com/64eMil00BEJ8dIH66BeGpkjI6b0CBAOVFhQFKYnPGOWnJKr-vpVq8cX4t3jBPVz7GJ5N7H0j5fQd4pe6Zrrgt0An_COSWTD_I0wGoIBoqny-FRc0TkG01TwmcvX3QO4NUNtBFsAwr_OI34CImsVonH0kn4Jvh6ADE380GBqVbv3Fbpkox4ZQmg3FtAzcrN_7KKVZGZ4dkDUrZn6gQfB-aWy3qVCb2madZ8_xR8rgcHkMs3zvE0NiT5SD9G3KOznl88Rec5vGV_UbTYLeWMTjhqp432uPkp9OJU_oavmCxaufXye2thcRUcIz5PjHU7XbBdA48CwaTlXumuwun4lABDtCHqsDGZ2NdVJIo_e1kgmX13xRFIPBb5dp8zdgvpiQ-H6cnd8gB5A9Eq4xltMuKAy8NI05WTmQ9r-FX0quixRpyBAfOL9ragtMeXxFQdilz8YUx7WD5jbTguFKEjlICy0KjukN3513xpJ33V-YP27HPwuamucxUu8Jtb2fMn5IPAyjbKL6uCbnBYnT58qSQwmuxPEy05USORN_jryNVcrpKX3F01Aahouh2Lw6OtPbKsMjdyx8X5auSH5tFt-DWKqIQVIc-oiPJaIWH0uAgw3nZaPgfA3ofrDLY3a7P2u_pyaDjA3_1b0FfQhqe3E7CztgLc_cfW7HFDeKJXNmssQtcziDojSkyVOfRH0iOlji-ebouf01Q5Jta6lNogP1F5s-YNePRYkQOj-IqKVoXlE7fDJRyg=w1373-h915-no" alt="Preview image">
+                            </li>
+                
+                            <li>
+                                <img src="https://lh3.googleusercontent.com/XfVbtcHozlOoE0z8oZGjzqxqHzejmAhOW4w7w8Xoh7GOYHlViUidYlhvsYO035IrzVbNZ-DUy_s1_LRSGsjMZiIEzODHPr7P8pKIAzs4fb9-7HRpH-WRzGRBPcIBSZdBOKV1RZF4aFfp_p6oJ1x0TRk6lPvNbST28plkX9kEfGRMp7Kheor1IkAgzokxns3D2SPPgHA-p5ryI-uTNdTiBuhivFDy2jUlqb5lOhFaG6Jtj0esd6_sWGMXzQ_MQew375sFr6WTfG2zrqBSOK4iEe86PmtpfzvAZGB1Z4ADAsqAFk9tulUxjMdWz59LL_Hr7g774xNroU2jmi1_RhZJSD5GYgPeZVRK07xVv9_ZpbokyPO-fTAM9lob0SZEjMqMblnyM_cVLBz1NooITlbaDuWcNBPRU_kGfOQkbGwErJh71xNS4bM1BsreCTKdQNllYmy4VBWiRZ24hRRd7a7WNmRTueh2XgH7tf-OCwSMY9Zp3H7J7vJY_X7rYCEB044vXqE2JtDejIWHkJCnvu6MKSPdFGBcTkDwJQG3a9dEc8izncu_DYbF-bKOqyVSSWqx5G7yqUwJLe21mPuDorXwrSYd011JvwYWXGhLPaRghdDgAhF5wklG_C2auGVaGI3CD296GADhnUkMmbKeB4SVMhwP-UIys0R1n1eERcyFmj6R0NNWhqtchBjj1z95TSUDuiQ6zZQYvcPYgoVglhNGv51cxKG18y0rHhE1G0bdEndplUnxTg=w1373-h915-no" alt="Preview image">
+                            </li>
+                
+                            <li>
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/thumb.jpg" alt="Preview image">
+                            </li>
+                        </ul> <!-- cd-gallery-items -->
+                    </main>
+                    
+ <!-- Ettrics -->
+ <a href="index.html" class="logo" target="_blank">
+  <img class="logo" src="logo.jpg" alt="" /> 
+ </a>  
+
+    
+</body>
+</html>
