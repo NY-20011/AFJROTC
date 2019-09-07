@@ -1437,7 +1437,7 @@
   !function() {
     var data = [
       { eventName: 'First Day of School', calendar: 'Work', color: 'orange', date: '2019-09-05' },
-      { eventName: 'First Day of Drill', calendar: 'Work', color: 'orange', date: '2019-09-06' },
+      { eventName: 'First Day of Drill', calendar: 'Work', color: 'orange', date: '2019-09-09' },
     ];
   
     
