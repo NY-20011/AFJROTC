@@ -1,3 +1,4 @@
+
 .pagination {
     position: absolute !important;
     width: 100%;
@@ -334,6 +335,15 @@
   .slideshow__slide-caption-title.-full {
     width: 100%;
   }
+  .slideshow__slide-caption-title {
+    line-height: 1;
+  }
+  @media (max-height: 500px) {
+    .slideshow__slide-caption-title {
+      margin-bottom: 0 !important;
+    }
+  }
+ 
   
   .slideshow__slide-caption-subtitle {
     display: inline-block;
