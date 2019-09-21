@@ -530,10 +530,12 @@ pre strong {
     position: relative;
     padding: 1.5em;
     color: #fff;
-    background: url(https://ny-20011.weebly.com/uploads/1/2/2/0/122004649/published/afjrotc-patch-2.jpg?1537323245) center/cover no-repeat;
+    background: url('flag3.jpg') center/cover no-repeat;
+    background-size:100%;
     text-shadow: rgba(0, 0, 0, 0.5) 0 0.2em 0.15em;
-    height: 30vh;
+    height: 40vh;
     box-shadow: rgba(0, 0, 0, 0.3) 0 0.2em 0.4em;
+
   }
   .Banner::before {
     content: '';
