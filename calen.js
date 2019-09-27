@@ -1438,6 +1438,9 @@
     var data = [
       { eventName: 'First Day of School', calendar: 'Work', color: 'orange', date: '2019-09-05' },
       { eventName: 'First Day of Drill', calendar: 'Work', color: 'orange', date: '2019-09-09' },
+      { eventName: 'No Uniform; Parent Teacher Conference', calendar: 'Work', color: 'orange', date: '2019-09-25' },
+      { eventName: 'School Clean Up, No Physical Training', calendar: 'Work', color: 'orange', date: '2019-09-26' },
+      { eventName: 'Community Service 5K Run', calendar: 'Work', color: 'orange', date: '2019-09-29' },
       
     ];
   
